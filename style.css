@@ -1,0 +1,214 @@
+body {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: white;
+    background: linear-gradient(to bottom, #4568dc, #b06ab3);
+}
+
+.container {
+    max-width: 1005px;
+    margin: 0 auto;
+    padding: 2em 1em;
+}
+
+header {
+    text-align: center;
+}
+
+nav {
+    margin: 2em auto 0;
+    max-width: 600px;
+}
+
+nav ul {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: space-between;
+}
+
+nav ul li {
+    list-style: none;
+}
+
+nav ul li a {
+    font-size: 1.25em;
+    color: white;
+    font-weight: 700;
+    text-decoration: none;
+}
+
+main {
+    display: flex;
+    flex-flow: column-reverse;
+}
+
+.hero {
+    text-align: center;
+}
+
+.hero h1 {
+    font-size: 2.5em;
+    font-weight: 700;
+}
+
+.hero p {
+    font-size: 1.2em;
+    font-weight: 600;
+    max-width: 500px;
+    line-height: 1.8em;
+    margin: 3em auto;
+}
+
+.hero p:before {
+    content: "";
+    display: block;
+    width: 120px;
+    border: 2px solid #EB2255;
+    margin: 1em auto;
+}
+
+.hero a {
+    padding: 1em 4em;
+    border-radius: 50px;
+    color: white;
+    text-decoration: none;
+    font-size: 1.1em;
+    font-weight: 700;
+    background: linear-gradient(to bottom, #ff512f, #ff5e62);
+}
+
+figure {
+    text-align: center;
+}
+
+figure img {
+    text-align: center;
+    width: 300px;
+}
+
+.row {
+    display: flex;
+    justify-content: space-between;
+    margin: 2em auto 0;
+    max-width: 600px;
+}
+
+.title h1 {
+    color: white;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 1em;
+}
+
+.title h1:before {
+    content: "";
+    display: block;
+    width: 120px;
+    border: 2px solid #EB2255;
+    margin: 1em auto;
+}
+
+.features h1{
+    color: white;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 1.5em;
+    text-align: center;
+}
+
+@media screen and (min-width: 820px) {
+    header {
+        display: flex;
+        justify-content: space-between;
+        flex-flow: center;
+        align-items: center;
+    }
+
+    nav {
+        margin: 0;
+    }
+
+    nav ul {
+        margin: 0;
+        padding: 0;
+        display: flex;
+    }
+
+    nav ul li {
+        list-style: none;
+        padding: 0.5em 2em;
+    }
+
+    nav ul li a {
+        font-size: 1.375em;
+        color: white;
+        font-weight: 700;
+        text-decoration: none;
+    }
+
+    main {
+        flex-flow: row;
+    }
+
+    .hero {
+        text-align: left;
+    }
+
+    .hero h1 {
+        font-size: 2.5em;
+    }
+
+    .hero p:before {
+        content: "";
+        display: block;
+        width: 120px;
+        border: 2px solid #EB2255;
+        margin: 1em 0;
+    }
+
+    .hero p {
+        font-size: 1.3em;
+        padding: 0;
+        margin: 0 0 3em 0;
+    }
+
+    .hero a {
+        padding: 1em 4em;
+        border-radius: 50px;
+        color: white;
+        text-decoration: none;
+        font-size: 1.1em;
+        font-weight: 700;
+        background: linear-gradient(to bottom, #ff512f, #ff5e62);
+    }
+
+    figure img {
+        width: 150%;
+    }
+
+    .row {
+        display: flex;
+        justify-content: space-between;
+        margin: 2em auto 0;
+        max-width: 800px;
+    }
+
+    .title h1 {
+        color: white;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        font-size: 1.5em;
+    }
+
+    .title h1:before {
+        content: "";
+        display: block;
+        width: 120px;
+        border: 2px solid #EB2255;
+        margin: 1em 0;
+    }
+
+    .features h1{
+        color: white;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        font-size: 2em;
+        text-align: center;
+    }
+}
